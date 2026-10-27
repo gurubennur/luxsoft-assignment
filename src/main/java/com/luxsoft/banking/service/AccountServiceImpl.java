@@ -1,9 +1,13 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.service;
 
-import com.luxsoft.banking.api.ApiModels.*;
-import com.luxsoft.banking.transaction.EntryType;
-import com.luxsoft.banking.transaction.LedgerEntry;
-import com.luxsoft.banking.transaction.LedgerEntryRepository;
+import com.luxsoft.banking.model.ApiModels.*;
+import com.luxsoft.banking.exception.AccountAlreadyExistsException;
+import com.luxsoft.banking.exception.AccountNotFoundException;
+import com.luxsoft.banking.model.Account;
+import com.luxsoft.banking.model.EntryType;
+import com.luxsoft.banking.model.LedgerEntry;
+import com.luxsoft.banking.repository.AccountRepository;
+import com.luxsoft.banking.repository.LedgerEntryRepository;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,5 +1,6 @@
-package com.luxsoft.banking.transaction;
+package com.luxsoft.banking.repository;
 
+import com.luxsoft.banking.model.LedgerEntry;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.data.domain.Page;

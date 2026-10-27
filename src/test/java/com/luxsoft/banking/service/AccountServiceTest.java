@@ -1,4 +1,4 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -10,14 +10,19 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.luxsoft.banking.api.ApiModels.AccountResponse;
-import com.luxsoft.banking.api.ApiModels.AmountRequest;
-import com.luxsoft.banking.api.ApiModels.CreateAccountRequest;
-import com.luxsoft.banking.api.ApiModels.LedgerResponse;
-import com.luxsoft.banking.api.ApiModels.TransferRequest;
-import com.luxsoft.banking.transaction.EntryType;
-import com.luxsoft.banking.transaction.LedgerEntry;
-import com.luxsoft.banking.transaction.LedgerEntryRepository;
+import com.luxsoft.banking.model.ApiModels.AccountResponse;
+import com.luxsoft.banking.model.ApiModels.AmountRequest;
+import com.luxsoft.banking.model.ApiModels.CreateAccountRequest;
+import com.luxsoft.banking.model.ApiModels.LedgerResponse;
+import com.luxsoft.banking.model.ApiModels.TransferRequest;
+import com.luxsoft.banking.config.ModelMapperConfiguration;
+import com.luxsoft.banking.exception.AccountAlreadyExistsException;
+import com.luxsoft.banking.exception.AccountNotFoundException;
+import com.luxsoft.banking.model.Account;
+import com.luxsoft.banking.model.EntryType;
+import com.luxsoft.banking.model.LedgerEntry;
+import com.luxsoft.banking.repository.AccountRepository;
+import com.luxsoft.banking.repository.LedgerEntryRepository;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;

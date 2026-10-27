@@ -1,4 +1,4 @@
-package com.luxsoft.banking.api;
+package com.luxsoft.banking.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.DecimalMin;

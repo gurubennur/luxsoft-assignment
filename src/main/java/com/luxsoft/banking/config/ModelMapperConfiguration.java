@@ -1,6 +1,6 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.config;
 
-import com.luxsoft.banking.api.ApiModels.CreateAccountRequest;
+import com.luxsoft.banking.model.ApiModels.CreateAccountRequest;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.config.Configuration.AccessLevel;
 import org.modelmapper.record.RecordModule;

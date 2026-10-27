@@ -1,4 +1,4 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.exception;
 
 public class AccountAlreadyExistsException extends RuntimeException {
     /** Creates a domain error for an account number that is already in use. */

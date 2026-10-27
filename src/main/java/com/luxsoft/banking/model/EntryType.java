@@ -1,4 +1,4 @@
-package com.luxsoft.banking.transaction;
+package com.luxsoft.banking.model;
 
 /** Identifies the account-side effect recorded by a ledger entry. */
 public enum EntryType {

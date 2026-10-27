@@ -1,5 +1,6 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.repository;
 
+import com.luxsoft.banking.model.Account;
 import jakarta.persistence.LockModeType;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;

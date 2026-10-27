@@ -1,8 +1,8 @@
-package com.luxsoft.banking.api;
+package com.luxsoft.banking.exception;
 
-import com.luxsoft.banking.account.AccountNotFoundException;
-import com.luxsoft.banking.account.AccountAlreadyExistsException;
-import com.luxsoft.banking.api.ApiModels.ErrorResponse;
+import com.luxsoft.banking.exception.AccountNotFoundException;
+import com.luxsoft.banking.exception.AccountAlreadyExistsException;
+import com.luxsoft.banking.model.ApiModels.ErrorResponse;
 import jakarta.validation.ConstraintViolationException;
 
 import java.time.Instant;

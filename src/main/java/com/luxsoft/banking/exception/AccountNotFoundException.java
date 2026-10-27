@@ -1,4 +1,4 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.exception;
 
 public class AccountNotFoundException extends RuntimeException {
     /** Creates a domain error for an account number that does not exist. */

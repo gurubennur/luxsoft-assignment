@@ -1,4 +1,4 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -106,7 +106,7 @@ public class Account {
     void setBalance(BigDecimal balance) { this.balance = balance; }
 
     /** Replaces the IFSC with the normalized value supplied by the service. */
-    void setIfsc(String ifsc) { this.ifsc = ifsc; }
+    public void setIfsc(String ifsc) { this.ifsc = ifsc; }
 
     /** Adds a validated amount to the account balance. */
     public void credit(BigDecimal amount) { balance = balance.add(amount); }
@@ -136,7 +136,7 @@ public class Account {
     }
 
     /** Initializes creation-time dates and actor fields before an account is persisted. */
-    void initializeForCreation() { initializeAuditFields(); }
+    public void initializeForCreation() { initializeAuditFields(); }
 
     /** Refreshes update time and system actor fields before JPA updates this entity. */
     @PreUpdate

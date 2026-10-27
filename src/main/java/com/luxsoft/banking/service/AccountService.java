@@ -1,10 +1,10 @@
-package com.luxsoft.banking.account;
+package com.luxsoft.banking.service;
 
-import com.luxsoft.banking.api.ApiModels.AccountResponse;
-import com.luxsoft.banking.api.ApiModels.AmountRequest;
-import com.luxsoft.banking.api.ApiModels.CreateAccountRequest;
-import com.luxsoft.banking.api.ApiModels.LedgerResponse;
-import com.luxsoft.banking.api.ApiModels.TransferRequest;
+import com.luxsoft.banking.model.ApiModels.AccountResponse;
+import com.luxsoft.banking.model.ApiModels.AmountRequest;
+import com.luxsoft.banking.model.ApiModels.CreateAccountRequest;
+import com.luxsoft.banking.model.ApiModels.LedgerResponse;
+import com.luxsoft.banking.model.ApiModels.TransferRequest;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
 

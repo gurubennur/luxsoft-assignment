@@ -1,6 +1,6 @@
-package com.luxsoft.banking.transaction;
+package com.luxsoft.banking.model;
 
-import com.luxsoft.banking.account.Account;
+import com.luxsoft.banking.model.Account;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

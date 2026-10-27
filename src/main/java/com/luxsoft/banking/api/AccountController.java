@@ -1,11 +1,11 @@
 package com.luxsoft.banking.api;
 
-import com.luxsoft.banking.account.AccountService;
-import com.luxsoft.banking.api.ApiModels.AccountResponse;
-import com.luxsoft.banking.api.ApiModels.AmountRequest;
-import com.luxsoft.banking.api.ApiModels.CreateAccountRequest;
-import com.luxsoft.banking.api.ApiModels.LedgerResponse;
-import com.luxsoft.banking.api.ApiModels.TransferRequest;
+import com.luxsoft.banking.service.AccountService;
+import com.luxsoft.banking.model.ApiModels.AccountResponse;
+import com.luxsoft.banking.model.ApiModels.AmountRequest;
+import com.luxsoft.banking.model.ApiModels.CreateAccountRequest;
+import com.luxsoft.banking.model.ApiModels.LedgerResponse;
+import com.luxsoft.banking.model.ApiModels.TransferRequest;
 import jakarta.validation.Valid;
 
 import java.net.URI;
